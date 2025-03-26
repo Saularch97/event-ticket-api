@@ -57,6 +57,7 @@ public class OrderServiceImpl implements OrderService {
             tickets.add(ticket.get());
         }
 
+        var novoTicket = new Order();
         var ticketOrder = new Order();
         ticketOrder.setTickets(new HashSet<>(tickets));
 
